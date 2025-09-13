@@ -1,0 +1,19 @@
+name: reddit
+channels:
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.11
+  - ipykernel
+  - pandas
+  - praw
+  - beautifulsoup4
+  - requests
+  - transformers
+  - matplotlib
+  - psycopg2
+  - sqlalchemy
+  - seaborn
+  - scikit-learn
+prefix: /opt/anaconda3/envs/reddit
