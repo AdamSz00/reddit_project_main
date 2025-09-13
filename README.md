@@ -102,13 +102,13 @@ pip install -r requirements.txt
 Run the ETL pipeline manually by executing:
 
 ```bash
-python PT/main.py
+python ETL/main.py
 ```
 
 Or use the shell script:
 
 ```bash
-bash PT/run_etl.sh
+bash ETL/run_etl.sh
 ```
 
 Logs will be generated in the `logs/` folder for monitoring.
@@ -128,7 +128,7 @@ To automate the ETL pipeline to run daily at 01:00 AM, add the following cron jo
 2. Add the line below, adjusting paths as necessary:
 
    ```cron
-   0 1 * * * /bin/bash /path/to/reddit_project_main/PT/run_etl.sh >> /path/to/reddit_project_main/logs/cron_output.log 2>&1
+   0 1 * * * /bin/bash /path/to/reddit_project_main/ETL/run_etl.sh >> /path/to/reddit_project_main/logs/cron_output.log 2>&1
    ```
 
 3. Save and exit. The ETL will now run automatically every day at 1 AM.
