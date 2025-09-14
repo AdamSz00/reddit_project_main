@@ -1,3 +1,3 @@
-scrape_limit: 10 #maximum is 1000
+scrape_limit: 1000 #maximum is 1000
 target_community: "roosterteeth"
 log_level: "INFO"
